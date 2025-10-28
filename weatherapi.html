@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Simple Weather API Project</title>
+    <title>Weather Forecast App</title>
     <link rel="stylesheet" href="weatherapi.css">
   </head>
   <body>
-    <div>
-      <p class = 'city-state'>Enter City, State, or Zip Code</p>
-      <input class = "city-state-input" type="text">
-      <button class = 'enter-button'>Enter</button>
+    <div class="container">
+      <div class="app-container">
+        <h1 class="app-title">V's Weather Forecast</h1>
+        <p class="city-state">Search for Weather</p>
+        <div class="search-container">
+          <input class="city-state-input" type="text" placeholder="Enter City, State, or Zip Code">
+          <button class="enter-button">Get Weather</button>
+        </div>
+        
+        <div class="weatherInfo"></div>
+        
+        <div class="forecast-header">
+          <h2>24-Hour Forecast</h2>
+        </div>
+        <div class="hourly-forecast"></div>
+      </div>
     </div>
-    <div class = 'weatherInfo'></div>
-    <script src = "weatherapi.js"></script>
+    <script src="weatherapi.js"></script>
   </body>
 </html>
